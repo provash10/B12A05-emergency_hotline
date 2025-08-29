@@ -73,6 +73,9 @@ copyButtons.forEach(button => {
         // navbar count
         let currentCount = parseInt(copyCountElement.textContent)
         copyCountElement.textContent = currentCount + 1
+
+        // let currentCoins = parseInt(coinElement.textContent)
+        // coinElement.textContent = currentCoins + 10
       })
       .catch(err => console.log("Copy failed:", err));
   });
