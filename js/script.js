@@ -35,7 +35,7 @@ for (let i = 0; i < callButtons.length; i++) {
 
     // div create
     const historyItem = document.createElement("div")
-    historyItem.className = "p-2 border rounded-md bg-gray-100 text-sm md:text-base"
+    historyItem.className = "p-2 border: 2px solid #D1D5D  bg-[#ffffff] shadow-md rounded-lg text-sm md:text-base"
 
     const now = new Date()
     const dateTime = now.toLocaleString()
@@ -68,7 +68,7 @@ copyButtons.forEach(button => {
     // clipboard copy
     navigator.clipboard.writeText(serviceNumber)
       .then(() => {
-        alert(serviceNumber + " copied to clipboard!")
+        alert(serviceNumber + " copied to clipboard !!")
 
         // navbar count
         let currentCount = parseInt(copyCountElement.textContent)
