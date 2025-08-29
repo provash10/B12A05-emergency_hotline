@@ -1,10 +1,10 @@
 //click heart
 function increaseHeart() {
-    const heartCount = document.getElementById('navbar-heart-number')
-    let currentHeart = parseInt(heartCount.innerText)
-    currentHeart += 1
-    heartCount.innerText = currentHeart
-    console.log('Current heart:', currentHeart)
+  const heartCount = document.getElementById('navbar-heart-number')
+  let currentHeart = parseInt(heartCount.innerText)
+  currentHeart += 1
+  heartCount.innerText = currentHeart
+  console.log('Current heart:', currentHeart)
 }
 
 // Coins element, call button, History,clear
@@ -18,7 +18,7 @@ for (let i = 0; i < callButtons.length; i++) {
   callButtons[i].addEventListener("click", function () {
     let currentCoins = parseInt(coinElement.innerText)
 
-    if (currentCoins <= 20) {
+    if (currentCoins < 20) {
       alert("Conied Finished!")
       return;
     }
@@ -26,7 +26,7 @@ for (let i = 0; i < callButtons.length; i++) {
     coinElement.innerText = currentCoins - 20
 
     // Service name & number showing
-    const card = callButtons[i].closest(".card"); 
+    const card = callButtons[i].closest(".card");
     const serviceName = card.querySelector(".service-name").innerText
     const serviceNumber = card.querySelector(".service-number").innerText
 
@@ -50,7 +50,7 @@ for (let i = 0; i < callButtons.length; i++) {
 
 //clear history
 clearBtn.addEventListener("click", function () {
-  historyList.innerHTML = ""; 
+  historyList.innerHTML = "";
   console.log("History cleared");
 });
 
@@ -60,8 +60,8 @@ const copyCountElement = document.getElementById("navbar-copy-number")
 const copyButtons = document.querySelectorAll(".copy-btn")
 
 copyButtons.forEach(button => {
-  button.addEventListener("click", function() {
-  
+  button.addEventListener("click", function () {
+
     const card = button.closest(".card")
     const serviceNumber = card.querySelector(".service-number").textContent
 
@@ -70,12 +70,10 @@ copyButtons.forEach(button => {
       .then(() => {
         alert(serviceNumber + " copied to clipboard !!")
 
-        // navbar count
+        // navbar copy count
         let currentCount = parseInt(copyCountElement.textContent)
         copyCountElement.textContent = currentCount + 1
 
-        // let currentCoins = parseInt(coinElement.textContent)
-        // coinElement.textContent = currentCoins + 10
       })
       .catch(err => console.log("Copy failed:", err));
   });
