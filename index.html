@@ -19,8 +19,7 @@
 
 <body class="inter-csbody">
   <!-- 1. Navbar -->
-  <div
-    class="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 lg:px-20 max-w-[1920px] mx-auto gap-4 md:gap-0">
+  <div class="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 lg:px-20 max-w-[1920px] mx-auto gap-4 md:gap-0">
     <!-- left side -->
     <div>
       <div class="flex items-center gap-5">
@@ -40,15 +39,14 @@
       </div>
 
       <div class="flex items-center gap-2 bg-[#41ff6b1a] rounded-full w-[100px] p-2">
-        <h1 class="text-xl md:text-2xl font-bold">100</h1>
+        <h1 class="text-xl md:text-2xl font-bold"><span id="navbar-coin-number">100</span></h1>
         <div>
           <img src="./assets/coin.png" class="w-8 md:w-10" alt="coin">
         </div>
       </div>
 
       <div class="flex items-center gap-2 border-green-500">
-        <button
-          class="text-lg md:text-2xl font-bold bg-[#00a63e] rounded-full w-[120px] md:w-[150px] min-h-5 p-2">2
+        <button class="text-lg md:text-2xl font-bold bg-[#00a63e] rounded-full w-[120px] md:w-[150px] min-h-5 p-2">2
           Copy</button>
       </div>
     </div>
@@ -70,253 +68,252 @@
     <div class="w-full lg:w-[74%] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
       <!-- card-1 National Emergency Number-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">National Emergency Number</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">National Emergency Number</h1>
           <p class="text-base md:text-xl">National Emergency</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">999</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">999</span></h1>
           <p class="mx-2">All</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-2 Police-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/police.png" class="bg-[#DFEFFF] w-12 md:w-16 rounded-full" alt="police">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Police Helpline Number</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Police Helpline Number</h1>
           <p class="text-base md:text-xl">Police</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">999</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">999</span></h1>
           <p class="mx-2">All</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-3 Fire Service Number-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/fire-service.png" class="bg-[#FFE3E2] w-12 md:w-16 rounded-full" alt="Fire Service ">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Fire Service Number</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Fire Service Number</h1>
           <p class="text-base md:text-xl">Fire Service</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">999</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">999</span></h1>
           <p class="mx-2">All</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-4 Ambulance Service-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/ambulance.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="Ambulance Service">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Ambulance Service</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Ambulance Service</h1>
           <p class="text-base md:text-xl">Ambulance</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-base md:text-2xl font-bold">01994-999999</span>
+          <h1 class="text-base md:text-2xl font-bold"><span class="service-number">01994-999999</span></h1>
           <p class="mx-2">Health</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-5 Women & Child Helpline-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Women & Child Helpline</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Women & Child Helpline</h1>
           <p class="text-base md:text-xl">Women & Child Helpline</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">109</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">109</span></h1>
           <p class="mx-2">Help</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base text-[#ffffff] md:text-xl font-bold bg-[#00a63e] p-2 rounded-xl">
+
+          <button class="call-btn w-1/2 text-base text-[#ffffff] md:text-xl font-bold bg-[#00a63e] p-2 rounded-xl">
             <i class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-6 Anti-Corruption Helpline-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Anti-Corruption Helpline</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Anti-Corruption Helpline</h1>
           <p class="text-base md:text-xl">Anti-Corruption</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">106</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">106</span></h1>
           <p class="mx-2">Govt.</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2  border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2  border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-7 Electricity Helpline-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Electricity Helpline</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Electricity Helpline</h1>
           <p class="text-base md:text-xl">Electricity Outage</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">16216</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">16216</span></h1>
           <p class="mx-2">Electricity</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-8 Brac Helpline-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Brac Helpline</h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Brac Helpline</h1>
           <p class="text-base md:text-xl">Brac</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">16445</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">16445</span></h1>
           <p class="mx-2">NGO</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-gray-500 rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
 
       <!-- card-9 Bangladesh Railway Helpline-->
-      <div class="bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
+      <div class="card bg-[#ffffff] border-2 border-[#5c5c5c] p-4 rounded-lg">
         <div class="flex justify-between items-center mb-4">
           <img src="./assets/emergency.png" class="bg-[#FFE3E2] rounded-full w-12 md:w-16" alt="emergency">
           <!-- heart-icon-click -->
-          <button onclick="increaseHeart()"><i class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
+          <button onclick="increaseHeart()"><i
+              class="fa-regular fa-heart text-black-500 hover:text-red-500 text-3xl cursor-pointer transition-colors duration-300"></i></button>
         </div>
 
         <div class="mb-4">
-          <h1 class="text-lg md:text-xl font-bold">Bangladesh Railway Helpline </h1>
+          <h1 class="service-name text-lg md:text-xl font-bold">Bangladesh Railway Helpline </h1>
           <p class="text-base md:text-xl">Bangladesh Railway</p>
         </div>
 
         <div class="mb-4">
-          <span class="text-xl md:text-2xl font-bold">16445</span>
+          <h1 class="text-xl md:text-2xl font-bold"><span class="service-number">16445</span></h1>
           <p class="mx-2">Govt. Service</p>
         </div>
 
         <div class="flex justify-between w-full gap-2">
-          <button
-            class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-[#5c5c5c] rounded-xl"><i
+          <button class="w-1/2 text-base md:text-xl font-bold bg-[#ffffff] border-2 border-[#5c5c5c] rounded-xl"><i
               class="fa-regular fa-copy"></i> Copy</button>
-          <button
-            class="w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
+          <button class="call-btn w-1/2 text-base md:text-xl font-bold text-[#ffffff] bg-[#00a63e] p-2 rounded-xl"><i
               class="fa-solid fa-phone"></i> Call</button>
         </div>
       </div>
@@ -326,20 +323,29 @@
     <div class="w-full lg:w-[28%] bg-[#f4f5f7] mt-4 lg:mt-0">
       <div class="bg-[#ffffff] p-4">
         <div class="flex sm:flex-row justify-between items-center gap-2">
-          <h1 class="text-xl md:text-2xl font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
-          <button
+          <h1 id="call-history-container" class="text-xl md:text-2xl font-bold"><i class="fa-regular fa-clock"></i> Call
+            History</h1>
+
+          <button id="clear-history-btn"
             class="text-[#ffffff] text-base md:text-xl font-bold bg-green-600 p-2 rounded-full w-[90px] md:w-[100px]">Clear</button>
         </div>
 
         <div class="mt-5 bg-[#ffffff] min-h-[400px] md:min-h-[800px]">
-          <h1 class="text-[#ffffff] text-lg md:text-2xl text-center font-bold w-full mx-auto bg-[#00a63e] p-2 rounded-full">
+          <h1
+            class="text-[#ffffff] text-lg md:text-2xl text-center font-bold w-full mx-auto bg-[#00a63e] p-2 rounded-full">
             Your All History</h1>
+
+            <!-- for history data -->
+            <div id="history-list" class="mt-4 space-y-2"></div>
         </div>
       </div>
     </div>
+
+    
   </div>
 
   <!-- js -->
-   <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
